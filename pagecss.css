@@ -1,0 +1,202 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    scroll-behavior: smooth;
+}
+
+#box {
+    background-image: linear-gradient(#E3FEF7, #fff);
+    width: 100%;
+    min-height: 100vh; /* Change height to min-height for better responsiveness */
+}
+
+.fcontainer {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Changed to percentage for flexibility */
+    margin: auto;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    font-size: 25px;
+}
+
+.name {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation > li {
+    padding: 0 15px;
+}
+
+.navigation > li > a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navigation > li > a:hover {
+    color: crimson;
+    transition: all 0.6s ease-in-out;
+}
+
+.bg {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10vw; /* Use viewport width for responsive text */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bawah {
+    font-family: 'Times New Roman', Times, serif;
+    color: hsla(0, 0%, 0%, 0.800);
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    padding: 100px 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Section 2 */
+
+#boxb {
+    background-image: linear-gradient(#fff, #E3FEF7);
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fto {
+    padding: 30px;
+}
+
+.fto img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+.txtf {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.abtm {
+    font-size: 30px;
+}
+
+.nc {
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* Section 3 */
+
+.boxb2 {
+    background-image: linear-gradient(#E3FEF7, #fff);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gmb1 img, .gmb2 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.gms, .gms2 {
+    font-size: 20px;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.text-block {
+    font-size: 24px;
+    color: black;
+    padding: 20px;
+}
+
+.img2 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Media Queries for different screen sizes */
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .bg {
+        font-size: 15vw;
+    }
+
+    .txtf {
+        font-size: 30px;
+    }
+
+    .abtm {
+        font-size: 25px;
+    }
+
+    .nc {
+        font-size: 20px;
+    }
+
+    .gms, .gms2 {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .img2 img {
+        max-width: 100%;
+    }
+}
